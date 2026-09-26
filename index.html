@@ -40,6 +40,13 @@
 
 /* Portrait integrated into the navy page surface */
 .hero-portrait{background:transparent;overflow:visible}.hero-portrait img{mask-image:linear-gradient(to bottom,#000 82%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 82%,transparent 100%)}.hero-portrait:after{background:linear-gradient(transparent,var(--navy));inset:75% 0 0}
+/* Headline and seamless portrait integration */
+.hero h1{font-size:clamp(46px,4.5vw,66px);line-height:1.07;letter-spacing:-1.5px;text-wrap:balance}
+.hero h1 em{display:inline}
+.hero-portrait{background:var(--navy);overflow:hidden}
+.hero-portrait img{-webkit-mask-image:linear-gradient(to right,transparent,#000 12%,#000 88%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 78%,transparent);mask-image:linear-gradient(to right,transparent,#000 12%,#000 88%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 78%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+.hero-portrait:after{inset:75% 0 0;background:linear-gradient(transparent,var(--navy));pointer-events:none}
+@media(max-width:760px){.hero h1{font-size:clamp(40px,8.8vw,60px);line-height:1.08;letter-spacing:-.9px}.hero-portrait img{object-fit:contain;object-position:center top}.hero-portrait{height:auto;aspect-ratio:1151/1367}}
 </style>
 <link rel="canonical" href="https://mentoriacycle.mauriciocastello.com.br/">
 </head>
@@ -53,7 +60,7 @@
 <main id="conteudo">
 <section class="hero wrap" aria-labelledby="hero-title">
  <div class="hero-copy"><p class="eyebrow"><span class="rule"></span> Mentoria individual para dentistas</p>
- <h1 id="hero-title">Seu paciente não deveria voltar <em>por acaso.</em></h1>
+ <h1 id="hero-title">Tenha o seu próprio programa de prevenção e construa uma <em>receita recorrente</em> no seu consultório</h1>
  <p class="hero-lead">Construa em quatro meses um programa preventivo exclusivo para o seu consultório. Com sua marca, seu DNA e sua estratégia.</p>
  <a class="button" href="https://cycle.mauriciocastello.com.br">QUERO APLICAR PARA CYCLE <span aria-hidden="true">↗</span></a>
  <p class="hero-note">4 meses de construção conjunta. Um novo ciclo para o seu consultório.</p></div>
